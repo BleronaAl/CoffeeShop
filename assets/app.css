@@ -1,0 +1,152 @@
+body {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+/* Main grid in website */
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    color: white;
+    isolation: isolate;
+}
+
+/* Itemes of main grid in website */
+.grid-item {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Header*****
+has inner grid */
+.header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    isolation: isolate;
+    place-self: center;
+    padding: 0;
+}
+
+/* Header's inner grid itemes */
+.header-griditemes {
+    margin-top: 0;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #753422;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Caveat', 'Monster', sans-serif;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #589ae6;
+}
+
+button {
+    padding: 9px 25px;
+    color: white;
+    background-color: rgb(122, 75, 61);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: inherit;
+    margin-left: 50px;
+    margin-bottom: 25px;
+
+}
+
+button:hover {
+    background-color: #589ae6;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 350px;
+    text-align: left;
+    top: 0;
+    position: sticky;
+    margin-bottom: 350px;
+}
+
+hr {
+    color: #753422;
+}
+
+/* Content */
+.content {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.content > div {
+    margin-bottom: 20px;
+    background-color: rgba(107, 64, 15, 0.274);
+    border: 10px solid white;
+}
+
+/* Footer */
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    text-align: left;
+    gap: 100px;
+    background-color: rgb(122, 75, 61);
+    color: white;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.footer h1 {
+    font-size: 20px;
+}
+
+.footer a {
+    font-size: 16px;
+    color: white;
+}
+
+.map{
+    margin-top: -20px;
+    margin-left: 30px;
+}
+
+.fa-brands {
+    font-size: 20px;
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+.grid-container a:hover {
+    color: #589ae6;
+}
